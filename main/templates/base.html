@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeritagePlus</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'img/favicon/site.webmanifest' %}">
+
+</head>
+
+<body>
+    
+
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="/" class="navbar-item" id="navbar-brand"><img src="{% static 'img/logo.png' %}" alt="HeritagePlus" >Heritage<span>Plus</span></a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="reports" class="navbar-item">Ongoing Reports</a>
+                    <a href="app" class="navbar-item">Map</a>
+                    <a href="reports" class="navbar-item">New Report</a>
+                    <a href="reports" class="navbar-item">Reports near you</a>
+                    <a href="" class="navbar-item disabled">Volunteering</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <a href="/" id="navbar-brand">Heritage<span>Plus</span></a> by <a href="https://www.ctrlaltelite.ml">Ctrl Alt Elite</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
+        </div>
+      </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+                
+            });
+        });
+    </script>
+</body>
+</html>
