@@ -23,7 +23,7 @@
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
-                <a href="/" class="navbar-item" id="navbar-brand"><img src="{% static 'img/logo.png' %}" alt="HeritagePlus" >Heritage<span>Plus</span></a>
+                <a href="/" class="navbar-item ok"><img src="{% static 'img/logo.png' %}" alt="HeritagePlus" >Heritage<span>Plus</span></a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -31,7 +31,7 @@
                 </a>
             </div>
             
-            <div class="navbar-menu">
+            <div class="navbar-menu has-text-white">
                 <div class="navbar-end">
                     <a href="reports" class="navbar-item">Ongoing Reports</a>
                     <a href="app" class="navbar-item">Map</a>
@@ -51,7 +51,7 @@
     <footer class="footer">
         <div class="content has-text-centered">
           <p>
-            <a href="/" id="navbar-brand">Heritage<span>Plus</span></a> by <a href="https://www.ctrlaltelite.ml">Ctrl Alt Elite</a>. The source code is licensed
+            <a href="/" class="ok">Heritage<span>Plus</span></a> by <a href="https://www.ctrlaltelite.ml">Ctrl Alt Elite</a>. The source code is licensed
             <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
         </div>
       </footer>
@@ -69,5 +69,7 @@
             });
         });
     </script>
+    {% block scripts %}
+    {% endblock %}
 </body>
 </html>

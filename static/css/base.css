@@ -1,7 +1,11 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Righteous&display=swap');
 
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
 
 .disabled:hover {
     cursor: not-allowed;
@@ -9,19 +13,26 @@
 
 .navbar {
     background-color: rgba(0,0,0,0);
-    z-index: 0;
+    z-index: 2;
 }
 
-#navbar-brand {
+.ok {
+    color: aliceblue;
     font-family: 'Righteous', cursive;
 }
-#navbar-brand span {
+.ok span {
     color: rgba(255, 199, 57, 1);
 }
 
 #banner {
-    background-image: url('https://cdn.dnaindia.com/sites/default/files/styles/full/public/2017/10/07/615158-monumental-100717.jpg');
+    background-image: url('https://cdn.discordapp.com/attachments/957868929383026738/960883107454672906/615158-monumental-100717-very_compressed-scale-1_50x-gigapixel.jpg');
     background-size: cover;
+    top: 50%; left: 50%;
+    position: absolute;
+    z-index: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%,-50%);
 }
     
 #about-banner {
@@ -29,5 +40,14 @@
     position: absolute;
     z-index: 1;
     min-width: 100%;
-    min-height: 93%;
+    min-height: 100%;
+}
+
+#about-banner section {
+    transform: translate(60%,70%);
+}
+
+.footer {
+    color: white;
+    background-color: black;
 }

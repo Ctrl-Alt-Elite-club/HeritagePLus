@@ -8,8 +8,11 @@ def index(request):
 def app(request):
     return render(request,'app.html')
 
-def reports(request,r_id):
+def report(request):
     return render(request,'report.html')
 
+def reports(request,r_id):
+    return render(request,'reports.html')
+
 def reportsAll(request):
-    return render(request,'report.html')
+    return render(request,'reports.html')
