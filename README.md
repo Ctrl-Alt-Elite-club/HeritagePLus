@@ -11,14 +11,6 @@ HeritagePlus is an initiative that focuses on the conservation, restoration and 
  - [Places API](https://www.geoapify.com/places-api) - API to Fetch Nearby Monuments for Users
 
 
-## Screenshots of the Project
-![image](https://user-images.githubusercontent.com/26377179/161876253-e77839d6-8a94-43d6-872e-c8816237128d.png)
-
-### Installation
-
-apne aap dekh lo bha :D :D :D
-
-
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
@@ -35,6 +27,4 @@ If you have a suggestion that would make this better, please fork the repository
 
 https://www.youtube.com/watch?v=q5B5mtFDjlk
 
-## Contact
 
-Please don't :D
